@@ -19,7 +19,7 @@ console.log(myCreatedDate2.toLocaleString());
 let myCreatedDate3 = new Date("2023-01-14"); // arg formate - YYYY-MM-DD
 console.log(myCreatedDate3.toLocaleString()); 
 
-// *******timestamps*****
+// *******timestamps**********
 
 let myTimeStamp = Date.now()  //
 console.log(myTimeStamp);  // 1-jan-1997 se abhi tk miliseconds very long digit value in milisecond 
