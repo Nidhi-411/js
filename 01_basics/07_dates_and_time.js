@@ -21,7 +21,7 @@ console.log(myCreatedDate3.toLocaleString());
 
 // *******timestamps*****
 
-let myTimeStamp = Date.now() //
+let myTimeStamp = Date.now()  //
 console.log(myTimeStamp);  // 1-jan-1997 se abhi tk miliseconds very long digit value in milisecond 
               // op is - 1709036305918 , ye current date ka h 
 
