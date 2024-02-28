@@ -37,4 +37,21 @@ console.log(typeof heros);
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
-// stack (primitives) 
+// stack (primitives)    // heap(Non-Primitive)
+
+let myname = "nidhu"
+let anotherName = myname;
+anotherName = "tonu"
+
+console.log(anotherName);
+console.log(myname);
+
+let user1 = {
+    email:"user@google.com" ,
+    upi:"user@ybl"
+} 
+
+ let userTwo = userOne 
+ userTow.email = "hitesh@ggl.com"; 
+
+ console.log(user1.email); // it will be changed 
