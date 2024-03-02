@@ -17,6 +17,7 @@ const regularUser = {
          userfullname : {
             firstname : "nidhu",
             lastname : "yadav"
+             
          }
     }
 }
@@ -68,3 +69,53 @@ console.log(obj3);
    console.log(tinderUser.hasOwnProperty( "isLoggedIn")); // gives true or false
     
    // more over go to inspect , console , make an object there and check all the methods available 
+
+
+   // *************** object  De-structure ***************
+   
+   //rect me backend se aapko object milta , usko de structure krke aapko values use karni padegi
+   const course = {
+    coursename : "js in hindi",
+    price : "999",
+    courseInstructor : "hitesh"
+   }
+
+   // way of accesing 
+   
+   // course.coursename , valid , but for clean code again and again writing it is not good 
+
+   // de -structuring 
+
+   const {courseInstructor} = course
+   console.log(courseInstructor);
+
+   const {price : p} = course
+   console.log(p);  // or bhi assan bana diya 
+   //**************json */
+
+   /* Api - putting our word on someOne's head 
+     
+    jo values backend se aati h (ye values json formate me aati h , sometime Array of objects ke form me aati h) ,
+     un values ko aap kese likhte h - > ? 
+   */
+   
+     // json 
+     {
+       "name" : "hitesh",
+       "coursename" : "js hindi",
+       "price" : "free"
+      
+     }
+  
+     // api.github.com/users/hiteshchoudhary 
+
+     /* 
+       js me fetch method use kar ke , factch method se ye url call krenge , 
+       responece me jo JSon formate me data mill jayega 
+       ab ise hum object me convert kar lenge and values ko access kr payenge 
+     */
+    // kai bar hume api array ke form me bhi milti h , array jiske andar object h [ {} , {} , {}]
+
+    // random user me api - koi si bhi api utha lo 
+    // json formate toll - for understanding api - formate beuty - code - tree 
+    // -> you can make your own json formate 
