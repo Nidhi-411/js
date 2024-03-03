@@ -70,3 +70,61 @@ function loginUserMsg3( username = "Rao")
 console.log(loginUserMsg3()); // op ->  "Rao just logged in"
 console.log(loginUserMsg3("")); // op -> "  just logged in"
 
+// *******function vidio 2  
+function calculateCartPrice( ...num)  // jb kitne arg me aayege pata hee nhi ho tb 
+{
+      return num;
+}
+
+console.log(calculateCartPrice(300 , 200 , 100 , 220 , 400  , 330 , 435 )); // op -> as array of all this
+
+/* rest operator - ...   , 3 dot ko hee rest operator bola jata h or isi ko spread operator bhi bola jata
+    and iske use case pr depend krnta h , when to call it spread , and when to call it spread     */
+
+    function calculateCartPrice2( val1 , val2 , ...num)  
+{
+      return num;
+} 
+
+console.log(calculateCartPrice2(322 , 400 , 33 ,2 , 333 ,898 ));  // op ->  [ 33, 2, 333, 898 ] 
+
+// ********** how to pass objects in 
+ const user = {
+    username : "hitesh",
+    prices : 199
+ } 
+
+ function handleObject (anyobject)
+ {
+    console.log(`username is ${anyobject.username} and price is ${anyobject.prices}`);
+ }
+
+handleObject( user)
+handleObject(
+    {
+       username : "niyati",
+       pricef : "399"  
+    }
+)
+
+//******** how to pass array in function 
+ 
+  const myNewArray = [200 , 400 , 100 , 600 ]
+
+  function returnSecondValue( getArray )
+  {
+     return getArray; 
+  }
+
+  console.log(returnSecondValue(myNewArray)); 
+
+  console.log(returnSecondValue([8900 , 7800 , 2300 , 8900]));
+
+  function returnSecondValue2 ( getArray )
+  {
+     return getArray[1]; 
+  }
+
+ console.log(returnSecondValue2(myNewArray));
+
+ 
