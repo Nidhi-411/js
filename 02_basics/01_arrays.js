@@ -11,7 +11,7 @@ const anotherarr = [0, 1 ,2 ,3, 4, 5,true , "hitesh"]
 
   Deep copy - properties do not share the same reference 
   */
-console.log(arr[3]); 
+console.log(arr[3]) ; 
 
 // ++++++++++++++++++++++++++ Methods +++++++++++++++++++++++++++++++
 
