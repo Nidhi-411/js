@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <title>Dom learaning part two </title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+   
+    <div class="parent">
+        <!-- this is a comment -->
+    <div class="day">Monday</div>
+    <div class="day">Tuesday</div>
+    <div class="day">wednessday</div>
+    <div class="day">thursday</div>
+    </div>
+</body>
+<script> 
+
+// relations - parent-child , child-child , child-parent
+
+// parent query krke , child ko access krna 
+const parent = document.querySelector(".parent");
+console.log(parent);
+console.log(parent.children) // it will give us html collection
+for(let  i =0 ; i < parent.children.length ; i++)
+{
+     console.log(parent.children[i].innerHTML);
+}
+parent.children[1].style.color="orange"
+
+console.log(parent.firstElementChild);
+console.log(parent.lastElementChild);
+
+// child query krke parent ko access krna 
+const dayOne = document.querySelector('.day');
+console.log(dayOne);
+console.log(dayOne.parentElement);
+console.log(dayOne.nextElementSibling);
+// querySelector is a heavy process , to agr parent query 
+// kr liya h to child ase hee nikal lo other methods se 
+// same with child - agr query kr liye to p other m se 
+
+
+// NodeList 
+
+console.log("Nodes : " , parent.childNodes);
+// we will get a NodeList of size 11 why we have only 4 child
+// bcz NodeList , complex tree structure hoti h ,
+// Dom pura ek tree Structure h , jisme har chij ki imp h
+// is NodeList m line break , comment ,  ....sb imp h 
+</script>
+</html>
