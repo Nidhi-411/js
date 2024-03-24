@@ -1,0 +1,35 @@
+
+<!--Async js -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async js , setInterval , clearInterval </title>
+</head>
+<body>
+    <h1> ram ram bhai sareya ne </h1>
+    <button id ="stop">Stop</button>
+    <button id="start">Start</button>
+</body>
+<script>
+
+     const sayMummy = function(str){
+        console.log( "mummy - ", str , Date.now());
+     }
+     let inval ;
+     //const inval = setInterval(sayMummy , 1000 , "mummy"); // passed 3 parem
+     document.querySelector('#start').addEventListener('click' , function(){
+         inval = setInterval(sayMummy , 1000 , "mummy"); // passed 3 parem
+        console.log("started ");
+       
+     })
+
+     document.querySelector('#stop').addEventListener('click', function(){
+        clearInterval(inval)
+        console.log("stopped")
+     });
+    
+    
+</script>
+</html>
