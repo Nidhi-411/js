@@ -42,7 +42,7 @@ buttons.forEach(function (button) {
 
 
 const frm = document.querySelector('form')
-// this usecase will give you empty
+// this usecase will give you  empty
 
 frm.addEventListener('submit',function(e){
   e.preventDefault()
